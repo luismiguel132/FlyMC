@@ -120,3 +120,23 @@ footer {
     background-attachment: fixed;
     background-position: center;
 }
+
+
+.countdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Espaçamento entre o temporizador e o texto */
+    font-size: 1.5rem;
+}
+
+.countdown {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.coming-soon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722; /* Cor para destacar o texto */
+}
