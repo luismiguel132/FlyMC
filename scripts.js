@@ -25,3 +25,18 @@ function entrarServidor() {
         }
     }, 1000);
 }
+
+// Seleciona o botão de menu e a lista de navegação
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('nav ul.menu');
+
+// Adiciona o evento de clique ao botão
+menuToggle.addEventListener('click', () => {
+    // Alterna a classe 'active' no menu
+    menu.classList.toggle('active');
+});
+
+// Temporizador (exemplo simples de contagem regressiva)
+function entrarServidor() {
+    alert("Conectando ao servidor...");
+}
