@@ -13,10 +13,7 @@
         <div class="logo">
             <img src="logo.png" alt="Logo FlyMC">
         </div>
-        <!-- Botão de menu hamburguer -->
-        <button class="menu-toggle" aria-label="Abrir Menu">
-            &#9776; <!-- Ícone de três barras -->
-        </button>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button> <!-- Ícone de menu -->
         <nav>
             <ul class="menu">
                 <li><a href="#home">Início</a></li>
@@ -34,7 +31,7 @@
             <h1>Bem-vindo ao FlyMC</h1>
             <p>Explore, crie e divirta-se no nosso servidor de Minecraft!</p>
             <button onclick="entrarServidor()">Entrar no Servidor</button>
-            <!-- Adicione este div onde você deseja exibir o temporizador e o texto -->
+            <!-- Contador de tempo -->
             <div class="countdown-container">
                 <div id="countdown" class="countdown"></div>
                 <div id="coming-soon" class="coming-soon">EM BREVE</div>
@@ -58,21 +55,23 @@
     <!-- Seção de Minigames -->
     <section id="minigames" class="minegames">
         <h2>Minigames Disponíveis</h2>
-        <ul>
-            <li>SkyWars</li>
-            <li>BedWars</li>
-            <li>Build Battle</li>
-            <li>Survival Games</li>
-        </ul>
+        <div class="minigame">
+            <h3>Survival</h3>
+            <p>Mostre suas habilidades em batalhas nos céus.</p>
+        </div>
+        <div class="minigame">
+            <h3>BedWars</h3>
+            <p>Proteja sua cama e destrua a dos adversários.</p>
+        </div>
     </section>
 
     <!-- Seção de Regras -->
     <section id="regras" class="regras">
         <h2>Regras do Servidor</h2>
         <ul>
-            <li>Sem uso de hacks ou trapaças.</li>
             <li>Respeite os outros jogadores.</li>
-            <li>Nada de spam ou publicidade.</li>
+            <li>Não use hacks ou trapaças.</li>
+            <li>Não faça spam no chat.</li>
         </ul>
     </section>
 
@@ -83,17 +82,16 @@
             <a href="https://www.tiktok.com/@pixelwoldmc?is_from_webapp=1&sender_device=pc" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
                     <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-                  </svg>
+                </svg>
             </a>
         </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 FlyMC. Todos os direitos reservados.</p>
+        <p>FlyMC &copy; 2024 - Todos os direitos reservados.</p>
     </footer>
 
     <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-CTxSENjlD6NpRtnGsnlWvLSj5GMoaHQMjpWWTVW2GdBwjaxmcEliBM3tyPnm1WV0" crossorigin="anonymous"></script>
 </body>
 </html>
